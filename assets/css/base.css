@@ -1,0 +1,114 @@
+:root {
+    --white-color: #fff;
+    --black-color: black;
+    --grey-color: rgba(253, 251, 251, 1.0);
+    --main-color: #ff8578;
+    --text-color:rgb(117, 115, 115);
+    --lightgrey-color:rgb(250, 250, 250);
+}
+
+* {
+    box-sizing: inherit;
+    scroll-behavior: inherit;
+    text-decoration: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.2s linear;
+    text-decoration: none;
+    scroll-behavior:smooth;
+}
+
+
+@font-face {
+    font-family: Courgette;
+    src: url(../font/Courgette-Regular.ttf);
+}
+.margin-left {
+    margin-left: auto;
+}
+.margin-right {
+    margin-right: auto;
+}
+.title_big {
+    font-size: 4.5rem;
+    font-family: Courgette;
+    padding-top: 10px;
+    margin-top: 0px;
+    color: var(--black-color);
+    text-align: center;
+}
+.title_normal {
+    font-family: Courgette;
+    font-size: 3.0rem;
+    color:var(--black-color);
+    text-align: center;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.title_small {
+    font-family: Courgette;
+    font-size: 2.0rem;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.title_red {
+    color:var(--main-color) !important;
+}
+.title_white {
+    color:white !important;
+}
+.text {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 100;
+    margin: 10px 0;
+    line-height: 2.0rem;
+    text-align: left;
+}
+.margin-left {
+    margin-right: 20px;
+}
+.margin-right {
+    margin-left: 20px;
+}
+.section {
+    padding: 65px 50px;
+}
+.content_title {
+    margin: 20px 0;
+}
+.text_center {
+    text-align: center;
+}
+.text_padding {
+    padding: 50px 50px;
+}
+.button_wrapper {
+    display: flex;
+    
+}
+.button {
+    display: block;
+    border: 2px solid var(--main-color);
+    padding: 10px 25px;
+    font-size: 1.4rem;
+    color: var(--main-color);
+    margin: 10px auto;
+    background-color: var(--white-color);
+    transition: 0.2s linear;
+}
+.button:hover {
+    background-color: var(--main-color);
+    color:var(--white-color);
+}
+
+.background_grey {
+    background-color: var(--lightgrey-color);
+}
+.section_wrapper {
+    padding: 50px 0;
+}

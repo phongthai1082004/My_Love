@@ -1,0 +1,427 @@
+/* header */
+
+.header {
+    --header-height:120px;
+    height: var(--header-height);
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--white-color);
+    z-index: 10;
+}
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.header_name {
+    font-family: Courgette;
+    font-size: 3.0rem;
+    font-weight: 200;
+    margin: 0;
+}
+.headermain {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.header_title {
+    font-weight: 100;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-family: Courgette;
+    margin: 0;
+}
+.header_navwrapper {
+    background-color: var(--main-color);
+    --nav-height:40px;
+    height: var(--nav-height);
+    position: absolute;
+    top: calc(var(--header-height) - var(--nav-height));
+    left: 0;
+    right: 0;
+}
+.header_nav {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+}
+.header_item {
+    display: inline-block;
+    line-height: calc(var(--nav-height) - 2px);
+    font-size: 1.5rem;
+    margin: auto 0px;
+    transition: none;
+}
+.header_link {
+    padding: 0px 25px;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+    width:100%;
+    display: inline-block;
+    transition: none;
+}
+.header_link:hover {
+    background-color: var(--white-color);
+}
+.header_link:hover {
+    border: -1px solid var(--main-color);
+    color: var(--main-color);
+}
+.header_navmenu {
+    display: none;
+    height: 100%;
+    position: relative;
+}
+.header_navmenuicon {
+    font-size: 1.5rem;
+    color:var(--main-color);
+    padding: 0 25px 0px 20px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.header_navmenuicon > i {
+    margin: auto;
+}
+.header_navmenuicon:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+/* nav_menu */
+.nav_inputcheck {
+    display: none;
+}
+/* content */
+
+.introduction_wrapper {
+    margin-top: var(--header-height);
+    background: url(../img/intro_background.jpg) no-repeat;
+    background-size: cover;
+}
+.introduction_infotext {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    height: 120px;
+}
+.introduction_story {
+    display: flex;
+    max-width:900px;
+    margin: 0 auto;
+}
+.introduction_person {
+    background-color:white;
+    padding: 5px 10px;
+}
+.introduction_icons {
+    display: flex;
+    justify-content: space-around;
+}
+.introduction_heartwrapper {
+    display: flex;
+    position: absolute;
+    top: 420px;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.introduction_img {
+    border-radius: 50%;
+    height: 100px;
+    width: var(--introduction-imgwidth);
+}
+.introduction_heart {
+    height: 100px;
+    width: 100px;
+}
+.introduction_story {
+    justify-content: space-around;
+    position: relative;
+}
+.introduction_infotextwrapper {
+    padding: 0px 15px;
+    width:calc(var(--introductiontext-width) - var(--introduction-imgwidth));
+    --introduction-imgwidth:120px;
+}
+.introduction_textbox {
+    border-top: 1px solid var(--grey-color);
+    margin: 0;
+    height: 120px;
+    display: flex;
+}
+.introduction_text {
+    margin:auto;
+    padding: 0 20px;
+}
+.introduction_icons {
+    padding: 5px 0px;
+    font-size: 1.5rem;
+    width:50px;
+    margin:auto;
+}
+.introduction_icon {
+    color: var(--text-color);
+    margin: 0 3px;
+}
+.introduction_icon:hover {
+    color: rgba(var(--text-color), 0.7);
+    cursor: pointer;
+}
+.introduction_title {
+    padding:100px 0px;
+    margin-top: 60px;
+}
+
+/* time */
+.time_block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--main-color);
+    margin: auto;
+    margin: 0px 5px;
+}
+.time_numberwrapper {
+    display: flex;
+}
+.time_number {
+    font-size: 3.5rem;
+    color: var(--white-color);
+    font-weight: 500;
+}
+.time_numbertitle {
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+.time_block {
+    width:100%;
+    margin: 5px;
+    padding: 20px;
+}
+
+/* ourstory */
+.ourstory_part {
+    margin: 50px 0px;
+}
+.ourstory_imgheart {
+    width: 90px;
+    height: 90px;
+}
+.ourstory_imgbox {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    --edge-length-: 250px;
+    width: var(--edge-length-);
+    height: var(--edge-length-);
+    border-radius: 50%;
+}
+.ourstory_img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    transition: all 1.5s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.ourstory_img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.ourstory_imgwrapper {
+    display: flex;
+    margin: auto;
+}
+.ourstory_heart {
+    display: flex;
+    position: relative;
+}
+.ourstory_imgheartwrapper {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+.ourstory_heartdate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.ourstory_year {
+    font-size: 2rem;
+    margin: 0;
+    font-style: italic;
+    color: var(--white-color);
+    font-family: Courgette;
+}
+.ourstory.month {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--white-color);
+}
+.ourstory_textwrapper {
+    display: flex;
+}
+.ourstory_text {
+    margin: auto 30px;
+}
+.ourstory {
+    position: relative;
+}
+.vertical_line {
+    position: absolute;
+    height: 100%;
+    background-color: var(--white-color);
+    width: 1px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    z-index: 1;
+}
+/* ceremony */
+.ceremony_imgwrapper {
+    overflow: hidden;
+}
+.ceremony_img {
+    max-width:100%;
+    overflow: hidden;
+    display: block;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: 0.2s linear;
+
+}
+.ceremony_img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.ceremony_title {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 10px 0;
+}
+.ceremony_icon {
+    color: var(--main-color);
+    margin: 0px 5px;
+}
+.ceremony_info > .text {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.ceremony_info {
+    border: 1px solid var(--lightgrey-color);
+    padding: 20px 0 10px;
+}
+/* gallery */ 
+.gallery_imgwrapper {
+    --img-height:200px;
+    position: relative;
+    height:var(--img-height);
+    width:95%;
+    margin: 12px 0;
+    display: flex;
+}
+.gallery_img {
+    width:100%;
+    object-fit: cover;
+    height:var(--img-height);
+    object-position: center;
+    vertical-align: top;
+    margin: auto;
+}
+.gallery_imgwrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+.gallery_imgwrapper:hover::after {
+    opacity: 1;
+}
+.gallery_imgwrapper > i {
+    font-size: 4rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.1s linear;
+    color: var(--white-color);
+}
+.gallery_imgwrapper:hover > i {
+    opacity: 0.7;
+    z-index: 3;
+}
+/* contact */
+
+.form_control {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid var(--main-color);
+    padding: 12px;
+    outline: none;
+}
+.form_group {
+    position: relative;
+}
+.form_group > i {
+    position: absolute;
+    top: 50%; 
+    right: 10px;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+.form_groupmessage > i {
+    top:16%;
+    right: 18px;
+}
+.form_control:enabled {
+    color: var(--main-color);
+}
+
+/* footer */ 
+
+.footer {
+    background: url(../img/footer_background.jpg) no-repeat center;
+    background-size: cover;
+}
+.footer_title {
+    padding :150px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
