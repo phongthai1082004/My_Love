@@ -329,7 +329,7 @@
 }
 /* gallery */ 
 .gallery_imgwrapper {
-    --img-height:200px;
+    --img-height:250px;
     position: relative;
     height:var(--img-height);
     width:95%;
