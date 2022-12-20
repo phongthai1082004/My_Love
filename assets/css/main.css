@@ -59,7 +59,7 @@
     transition: none;
 }
 .header_link {
-    padding: 0px 25px;
+    padding: 1px 25px;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 500;
