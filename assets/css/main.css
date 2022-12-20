@@ -189,6 +189,8 @@
     background-color: var(--main-color);
     margin: auto;
     margin: 0px 5px;
+    width:100%;
+    padding: 20px;
 }
 .time_numberwrapper {
     display: flex;
@@ -202,11 +204,7 @@
     font-size: 1.5rem;
     color: var(--white-color);
 }
-.time_block {
-    width:100%;
-    margin: 5px;
-    padding: 20px;
-}
+
 
 /* ourstory */
 .ourstory_part {

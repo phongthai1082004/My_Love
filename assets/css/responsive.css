@@ -111,5 +111,7 @@
 }
 
 @media (max-width: 654px) {
-    
+    .time_numbertitle {
+        font-size: 1.2rem;
+    }
 }
