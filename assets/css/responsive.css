@@ -51,9 +51,6 @@
     .introduction_person {
         margin-top: 25px;
     }
-    .introduction_heartwrapper{
-        top:440px;
-    }
 }
 
 @media (max-width: 740px) {
@@ -61,7 +58,7 @@
         margin-top: 25px;
     }
     .introduction_heartwrapper {
-        top:575px;
+        top:620px;
     }
     .introduction_story {
         margin: 0px 20px;
@@ -107,9 +104,6 @@
     }
     .form_groupmessage > i {
         right: 10px;
-    }
-    .introduction_heartwrapper{
-        top:640px;
     }
 }
 

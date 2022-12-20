@@ -125,10 +125,6 @@
     background-color:white;
     padding: 5px 10px;
 }
-.introduction_icons {
-    display: flex;
-    justify-content: space-around;
-}
 .introduction_heartwrapper {
     display: flex;
     position: absolute;
@@ -166,9 +162,11 @@
 }
 .introduction_icons {
     padding: 5px 0px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width:50px;
     margin:auto;
+    display: flex;
+    justify-content: space-around;
 }
 .introduction_icon {
     color: var(--text-color);
