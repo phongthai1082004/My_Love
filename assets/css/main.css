@@ -189,7 +189,7 @@
     background-color: var(--main-color);
     margin: auto;
     margin: 0px 5px;
-    width:100%;
+    width: 100%;
     padding: 20px;
 }
 .time_numberwrapper {
@@ -204,8 +204,6 @@
     font-size: 1.5rem;
     color: var(--white-color);
 }
-
-
 /* ourstory */
 .ourstory_part {
     margin: 50px 0px;
@@ -399,9 +397,7 @@
 .form_control:enabled {
     color: var(--main-color);
 }
-
 /* footer */ 
-
 .footer {
     background: url(../img/footer_background.jpg) no-repeat center;
     background-size: cover;
