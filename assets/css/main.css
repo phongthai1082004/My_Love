@@ -216,7 +216,7 @@
     margin: auto;
     overflow: hidden;
     position: relative;
-    --edge-length-: 250px;
+    --edge-length-: 200px;
     width: var(--edge-length-);
     height: var(--edge-length-);
     border-radius: 50%;
